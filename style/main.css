@@ -610,8 +610,8 @@ header.sticky nav a:hover{
         width: 390px;
         min-height: 358px;
         box-shadow:     
-                         5px 5px 5px rgb(117, 16, 247),
-                         inset 5px 5px 5px rgb(117, 16, 247);
+        5px 5px 5px rgb(117, 16, 247),
+        inset 5px 5px 5px rgb(117, 16, 247);
         
         display: flex;
         flex-direction: column;
