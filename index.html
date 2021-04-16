@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/font-awesome.css">
     <link rel="stylesheet" href="style/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Walid Oumechtak</title>
 </head>
 <body>
@@ -50,7 +52,7 @@
                     <div class="text1">Hi, My Name Is</div>
                     <div class="text2">Walid Oumechtak</div>
                     <div class="text3">And I'm a <span class="typing"></span></div>
-                    <a href="http://wa.me/212681734178" target="_blank">Contact Me</a>
+                    <a href="http://wa.me/212681734178" target="_blank" data-aos="fade-up">Contact Me</a>
                     <div class="circle"></div>
                 </div>
             </div>
@@ -66,11 +68,11 @@
                 <div class="container">
                     <div class="aboutme" id="about">
                         <div class="image-box">
-                                    <img src="img/aboutme.png" alt="about me">
+                                    <img data-aos="fade-right" src="img/aboutme.png" alt="about me">
                         </div>
                         <div class="content">
-                                <h1> <span id="Ab"> A</span>bout <span class="typd2"> </span></h1>
-                                <p>
+                                <h1 data-aos="fade-down" > <span id="Ab"> A</span>bout <span class="typd2"> </span></h1>
+                                <p data-aos="fade-down" data-aos-duration="1900">
 
                                     Since beginning my journey as a freelance designer nearly 2 years ago,
                                     I've done remote work for agencies, consulted for startups, and collaborated with
@@ -80,7 +82,7 @@
                                     
                                 </p>
 
-                                <a href="https://drive.google.com/file/d/1teXieoXiM-qmsafyuPJXWHRGU3o7z5xW/view?usp=sharing" target="_blank">Download CV</a>
+                                <a data-aos="fade-down" data-aos-duration="2000"  href="https://drive.google.com/file/d/1teXieoXiM-qmsafyuPJXWHRGU3o7z5xW/view?usp=sharing" target="_blank">Download CV</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +95,8 @@
                     <div class="skills" id="skills">
                         <h2> <span>M</span>y Skills </h2>
 
-                        <div class="allskills">
+                        <div data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" class="allskills">
 
                         <div class="skillbox">
                             <h3>HTML</h3>
@@ -127,7 +130,8 @@
                         <h2><span>M</span>y Service</h2>
 
                         <div class="allcard">
-                        <div class="card-box">
+                        <div class="card-box" data-aos="fade-right">
+
                             <i class="fa fa-edit"></i>
                                 <h3>Designer</h3>
                                      <p>
@@ -136,7 +140,8 @@
                                     </p>
                         </div>
 
-                        <div class="card-box">
+                        <div class="card-box" data-aos="fade-left">
+
                             <i class="fa fa-code"></i>
                                  <h3> Front-end <br> Developer </h3>
                                     <p>
@@ -158,7 +163,7 @@
                             <h2><span>M</span>y Works</h2>
 
                             <div class="allworks">
-                                <div class="box box1">
+                                <div class="box box1" data-aos="fade-right">
                                         <img src="img/projrct1.png" alt="">
                                         <div class="info">
                                                 <h3>Y&Z - BTP</h3>
@@ -167,7 +172,7 @@
                                         </div>
                                 </div>
 
-                                <div class="box box2">
+                                <div class="box box2" data-aos="fade-left">
                                         <img src="img/project2.png" alt="">
                                         <div class="info">
                                                 <h3>Best Food</h3>
@@ -207,19 +212,19 @@
                 <div class="container">
                 <footer>
                     
-                            <div class="box">
+                            <div class="box" data-aos="flip-up">
                                 <i class="fa fa-user"></i>
                                 <h3>Name</h3>
                                 <p>Walid Oumechtak</p>
                             </div>
 
-                            <div class="box">
+                            <div class="box" data-aos="flip-up">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 <h3>Address</h3>
                                 <p>Marrakech, Morocco</p>
                             </div>
 
-                            <div class="box">
+                            <div class="box" data-aos="flip-up">
                                 <i class="fa fa-envelope"></i>
                                 <h3>Email</h3>
                                 <p>woumechtak@gmail.com</p>
@@ -261,6 +266,12 @@
     <!-- ------------------ My Script --------------------- -->
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration : 1700,
+      });
+    </script>
 
 </body>
 </html>

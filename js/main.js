@@ -37,6 +37,22 @@ menubutton.onclick = function(){
 }
 
 
+/*-----------------------------------*/
+
+let allnav = document.querySelectorAll('nav');
+
+allnav.forEach(nv => {
+        nv.addEventListener('click', (e) =>{
+
+                if(mynav.classList.contains('active') && menubutton.classList.contains('active')){
+                        mynav.classList.remove('active');
+                        menubutton.classList.remove('active');
+                }
+
+        })
+})
+
+
 
 // typing animation ----------------------
 
