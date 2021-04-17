@@ -981,54 +981,104 @@ header.sticky nav a:hover{
 
 /* start lastweb */
 
-        .lastweb{
-            padding: 20px 0;
-            border-top: 2px solid rgb(117, 16, 247) ;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-        }
+.lastweb{
+    padding: 20px 0;
+    border-top: 2px solid rgb(117, 16, 247) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
-        @media (max-width:400px){
-            .lastweb{
-                width: 90%;
-                margin: 0 auto;
-            }
-        }
+@media (max-width:400px){
+    .lastweb{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
-        .lastweb .copy{
-            color: white;
-        }
+.lastweb .copy{
+    color: white;
+}
 
-        @media (max-width:765px){
-            .lastweb .copy{
-                margin-bottom: 20px;
-            }
-        }
+@media (max-width:765px){
+    .lastweb .copy{
+        margin-bottom: 20px;
+    }
+}
 
-        @media (max-width:587px){
-            .lastweb .copy{
-                text-align: center;
-            }
-        }
+@media (max-width:587px){
+    .lastweb .copy{
+        text-align: center;
+    }
+}
 
-        .socialmedia a{
-            text-decoration: none;
-        }
+.socialmedia .btn{
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px -5px rgb(117, 16, 247) ;
+    position: relative;
+    overflow: hidden;
+}
 
-        .socialmedia a i{
-            color: white;
-            font-size: 22px;
-            margin:0 8px;
-            transition: 0.5s;
-            cursor: pointer;
-            padding: 5px;
-        }
+.socialmedia .btn::before{
+    content: '';
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    background: rgb(117, 16, 247);
+}
 
-        .socialmedia i:hover{
-            color: rgb(117, 16, 247);
-        }
+.socialmedia .btn:hover::before{
+    animation: www 0.6s 1;
+    top: -10%;
+    left: -10%;
+    
+}
+
+
+
+.socialmedia .btn i{
+   
+    line-height: 30px;
+    color: rgb(117, 16, 247);
+    font-size: 19px;
+    margin:0 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.socialmedia .btn:hover i{
+    transform: scale(1.2);
+    color: white;
+}
+
+@keyframes www{
+    0%{
+        left: -110%;
+    top: 90%;
+    }50%{
+        left: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
 
 /* ens lastweb */
 
