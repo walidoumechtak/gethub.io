@@ -726,7 +726,87 @@ header.sticky nav a:hover{
             letter-spacing: 2px;
         }
 
+        .allworks .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .allworks .box {
+            width: 350px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .allworks .box .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(248, 255, 255);
+            width: 100%;
+            height: 100%;
+        }
+
+        .back .info{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: black;
+        }
+
+        .back .info a{
+            display: block;
+            text-decoration: none;
+            margin-top: 10px;
+            padding: 6px 25px;
+            background-color: rgb(117, 16, 247);
+            border: 1.5px solid rgb(117, 16, 247);
+            color: white;
+            font-weight: bold;
+            border-radius: 15px;
+            transition: 0.5s all;
+        }
+
+        .back .info a:hover{
+                background: none;
+                color: rgb(117, 16, 247);
+        }
+
+        
+
+        .back,
+        .front{
+            backface-visibility: hidden;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.55s linear;
+        }
+
+       .allworks .box .front{
+            transform: perspective(600px) rotateY(0);
+        }
+
+        .allworks .box .back{
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        .allworks .box:hover > .front{
+            transform: perspective(600px) rotateY(-180deg);
+        }
+
+        .allworks .box:hover > .back{
+            transform: perspective(600px) rotateY(0);
+        }
+
+
+
+
+        /* .allworks .box {
             width: 350px;
             height: 250px;
             position: relative;
@@ -794,7 +874,7 @@ header.sticky nav a:hover{
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
+        } */
 
 
         /* media works */
@@ -812,6 +892,8 @@ header.sticky nav a:hover{
         }
 
         /* media works */
+
+
 
 /* End myworks */
 
