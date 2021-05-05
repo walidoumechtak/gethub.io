@@ -247,9 +247,9 @@
     <!-- start Contact -->
 
 
-
+ 
     <!-- start footer -->
-                <div class="container">
+                <!-- <div class="container">
                 <footer>
                     
                             <div class="box" data-aos="flip-up">
@@ -271,12 +271,62 @@
                             </div>
                     
                 </footer>
-            </div>
-
-
-           
+            </div> -->
 
     <!-- end footer -->
+
+
+    <div class="container">
+        <footer>
+            <div class="slide">
+
+                <input type="radio" name="move-btn" id="mvbtn1">
+                <input type="radio" name="move-btn" id="mvbtn2">
+                <input type="radio" name="move-btn" id="mvbtn3">
+
+                    <div class="box active">
+                        <div class="min-box">
+                        <i class="fa fa-user"></i>
+                        <h3>Name</h3>
+                        <p>Walid Oumechtak</p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="min-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h3>Address</h3>
+                        <p>Marrakech, Morocco</p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="min-box">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>woumechtak@gmail.com</p>
+                    </div>
+                    </div>
+
+                    <div class="auto-move">
+                        <div class="automv1"></div>
+                        <div class="automv2"></div>
+                        <div class="automv3"></div>
+                    </div>
+                </div>
+
+
+                <div class="manuel-move">
+                    <label for="mvbtn1" class="mn-btn"></label>
+                    <label for="mvbtn2" class="mn-btn"></label>
+                    <label for="mvbtn3" class="mn-btn"></label>
+                </div>
+        </footer>
+    </div>
+
+
+
+
 
     <!-- start lastweb -->
                 <div class="container">                    
@@ -311,6 +361,18 @@
       AOS.init({
         duration : 1700,
       });
+
+
+      let cpt = 1;
+      setInterval(function(){
+                document.getElementById("mvbtn"+cpt).checked = true;
+
+                cpt++;
+
+                if(cpt > 3){
+                        cpt = 1;
+                }
+      },3500)
     </script>
 
 </body>

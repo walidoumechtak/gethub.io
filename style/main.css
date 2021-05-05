@@ -1015,7 +1015,7 @@ header.sticky nav a:hover{
 
 /* start footer */
 
-        footer{
+        /* footer{
             padding: 40px 0;
             display: flex;
             flex-wrap: wrap;
@@ -1052,12 +1052,136 @@ header.sticky nav a:hover{
         footer .box i{
             color: rgb(117, 16, 247);
             font-size: 30px;
-        }
+        } */
 
       
+/* end footer */
+
+
+/* start footer */
+
+footer{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+footer input{
+    display: none;
+}
+
+footer .slide{
+    width: 600%;
+    display: flex;
+    height: 200px;
+}
+
+
+footer .box{
+    width: 20%;
+    height: 200px;
+    transition: 1s;
+}
+
+footer .box .min-box{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+}
+
+
+footer .manuel-move{
+    position: absolute;
+    bottom: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .manuel-move .mn-btn{
+    cursor: pointer;
+    border: 3px solid blue;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+footer .manuel-move .mn-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+ 
+footer #mvbtn1:checked ~ .active{
+    margin-left: 0;
+}
+
+footer #mvbtn2:checked ~ .active{
+    margin-left: -20%;
+}
+
+footer #mvbtn3:checked ~ .active{
+    margin-left: -40%;
+}
 
 
 
+/*--------------------------------*/
+
+.auto-move{
+    position: absolute;
+    bottom: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.auto-move div{
+    cursor: pointer;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.auto-move div:not(:last-child){
+    margin-right: 20px;
+}
+
+
+#mvbtn1:checked ~ .auto-move .automv1{
+    background: blue;
+}
+
+#mvbtn2:checked ~ .auto-move .automv2{
+    background: blue;
+}
+
+#mvbtn3:checked ~ .auto-move .automv3{
+    background: blue;
+}
+
+
+
+
+
+footer .box h3 {
+    color: white;
+    letter-spacing: 2px;
+    margin: 5px 0;
+}
+
+footer .box p{
+    color: rgb(197, 194, 194);
+}
+
+footer .box i{
+    color: rgb(117, 16, 247);
+    font-size: 30px;
+}
 /* end footer */
 
 
