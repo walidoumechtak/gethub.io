@@ -1,0 +1,219 @@
+:root{
+    --index : rgb(247, 183, 64); 
+}
+
+
+/* ============================= alert login =========================*/
+
+    .login-alert{
+        width: 80% !important;
+        padding: 10px 15px !important;
+        background-color: rgb(243, 84, 84) !important;
+        color: white !important;
+        position: absolute !important;
+        top: 10px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+
+    #registreB:not(:disabled), [type=reset]:not(:disabled), #registreB:not(:disabled), button:not(:disabled) {
+        cursor: pointer !important;
+        color: white;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: -6px;
+        right: 2px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+
+
+/* ============================= alert login =========================*/
+
+ body {
+    background-color: #EEEEEE;
+}
+
+.container{
+    width: 74%;
+    margin: 30px auto;
+}
+
+.container .rows{
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .container .text-center img{
+     width: 170px; 
+} */
+
+.image-box{
+    width: 50%;
+}
+
+.image-box img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+form{
+    width: 50%;
+    /* background-color: #7061FA; */
+    background-color: #393E46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+form .infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+} 
+
+form .infor label{
+    color: white;
+}
+
+form .infor input{
+    margin: 8px 0;
+    padding: 8px 16px;
+    border-radius: 23px;
+    border: none;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+
+form .infor input:focus{
+    outline: none;
+    border-bottom: 3px solid var(--index);
+}
+
+form .fob{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+
+
+form .fob a{
+    color: white;
+}
+form .fob input{
+    font-weight: 600;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    padding: 8px 44px;
+    border: none ;
+    color: white;
+    background-color: var(--index);
+}
+
+form .create{
+    margin-top: 30px;
+    color: white;
+
+}
+
+form .create a{
+    color: var(--index);
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 955px) {
+    
+        .image-box{
+            display: none;
+        }
+
+        .image-box img{
+            display: none;
+        }
+
+        .container .rows{
+            margin-top: 33px;
+            display: flex;
+            justify-content: center;
+        }
+
+        form{
+            width: 100%;
+            padding: 20px 20px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        form input{
+            display: block;
+        }
+
+  }
+
+  @media only screen and (max-width: 540px){
+    form .infor{
+        width: 93%;
+       } 
+
+       form .fob{
+           width: 93%;
+       }
+  }
+
+  @media only screen and (max-width: 599px){
+      form input{
+          width: 100%;
+      }
+
+      .container{
+        width: 93%;
+        margin: 30px auto;
+      }
+     
+  }
+
+
+
+@media only screen and (max-width: 1092px) {
+    form .fob{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    form .infor input{
+        margin: 8px 0;
+        padding: 7px 12px;
+    }
+    form .fob input{
+        padding: 6px 33px !important;
+    }
+  }

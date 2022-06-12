@@ -1,0 +1,306 @@
+/*==============================  start navbar =============================*/
+:root{
+    --a-color: rgb(224, 222, 222);
+    --a-hover: rgb(247, 183, 64);
+    --index : rgb(247, 183, 64);
+}
+
+    body {
+        background-color: whitesmoke;
+    }
+
+
+    #nav-cont {
+        width: 100%;
+        background-color: black;
+    }
+
+  
+    .dropdown-me {
+        display: none;
+        position: relative;
+    }
+
+    .btn-group:hover .dropdown-me {
+        display: block !important;
+        color: red;
+    }
+
+    .dropdown-me {
+        z-index: 100;
+        position: absolute;
+        top: 29px;
+        right: 0px;
+        width: 100px;
+        background: var(--index);
+        padding: 10px 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+
+    .dropdown-me i{
+        position: absolute;
+        top: -13px;
+        right: 3px;
+        color: var(--index);
+        font-size: 30px !important;
+    }
+
+    
+    .dropdown-me  a{
+        color: white;
+        margin: 5px 0;
+    }
+    .dropdown-me  a:hover{
+        color: white !important;
+    }
+
+    .dropdown-me  li{
+        list-style: none;
+    }
+
+
+a{
+    text-decoration: none;
+    color: var(--a-color);
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    align-items: center;
+    color: rgb(224, 222, 222);
+    /* background-color: rgba(0,0,0,0); */
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+
+    header nav{
+        width: 40%;
+    }
+
+header nav a {
+    margin: 0 1.5%;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    position: relative;
+}
+
+header nav a:hover{
+    /* color: var(--index); */
+    color: var(--index);
+}
+
+header nav a::before{
+    content: '';
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+    position:absolute;
+    width: 0px;
+    height: 3px;
+    top: 25px;
+    background-color: var(--index);
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+header nav a:hover:first-child::before{
+    width: 44px;
+}
+header nav a:hover:nth-child(2):before{
+    width: 44px;
+}
+header nav a:hover:nth-child(3):before{
+    width: 66px;
+}
+header nav a:hover:nth-child(4):before{
+    width: 64px;
+}
+header nav a:hover:last-child::before{
+    width: 76px;
+}
+
+
+header .cart-nav i{
+    font-size: 1.1em;
+    margin-right: 5px;
+    color: var(--index);
+}
+
+
+
+header #nmb-card{
+    margin-right: 10px;
+    margin-right: 10px;
+    padding: 2px 11px;
+    width: 86px;
+    height: 19px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: var(--index);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+header .cart-nav a{
+    margin-left: 10px;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+}
+header .cart-nav a:hover{
+    color: var(--index);
+}
+
+
+
+
+
+
+
+
+
+ header .non {
+    display: none;
+    width: 35px;
+    height: 35px;
+    background-image: url(../image/menu.png);
+    background-size: cover;
+} 
+
+
+header .dipani{
+    display: none;
+}
+
+ 
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    
+        header nav{
+            display: none;
+        }
+
+     
+
+        /* .cart-nav{
+            display:flex;
+            justify-content: center;
+        } */
+
+        header nav a{
+            color: var(--index);
+            margin-top: 35px;
+            margin-left: 0;
+            font-size: 1.6em;
+        }
+
+        /*  =============  add by javascript ==========  */
+        header nav.active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            font-weight: 600;
+        }
+
+        header .dipani{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header .dipani .shop-div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100px;
+        }
+
+      
+        
+
+        header .dipani #nmb-card {
+            margin-right: 10px;
+            padding: 3px 11px;
+            width: 31px;
+            height: 31px;
+            margin-bottom: -40px;
+            font-weight: 700;
+        }
+
+        header .non.active{
+            width: 25px;
+            height: 25px;
+            background-image: url(../image/close.png) !important;
+            /* backdrop-filter: black; */
+            background-size: cover;
+            z-index: 10000000 !important;
+        }
+        /*  ============= end add by javascript ==========  */
+
+        header .cart-nav .oui{
+            display: none;
+        }
+
+        header .non{
+                display: inline-block;
+               z-index: 100000;
+               cursor: pointer;
+        }
+
+        header .logo img{
+            width: 150px;
+        }
+
+
+
+
+        header nav a::before{
+            content:'';
+            background-color: transparent;
+            width: 0%;
+            height: 0%;
+
+        }
+        
+      
+} 
+
+
+
+
+
+
+
+
+
+/*==============================  end navbar =============================*/

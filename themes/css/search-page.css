@@ -1,0 +1,311 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+
+.search-land{
+        width: 100%;
+        min-height: 330px;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url("../image/journy.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        margin-bottom: 70px;
+
+    }
+    .search header{
+        background-color: black;
+        align-items: center;
+        
+    }
+
+    .search-land-title{
+        width: 100%;
+    }
+    .search-land-title form{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+        .search-land-title form input[type=text]{
+            width:60%;
+            padding: 6px 14px;
+            background-color: transparent;
+            /*border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            */border: 1px solid var(--index);
+            border-radius: 20px;
+            outline: none;
+            color: white;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+
+        .search-land-title form input[type=text]::placeholder{
+            color: white;
+        }
+
+        .search-land-title form input[type=submit]{
+            padding: 6px 30px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: var(--index);
+            color: white;
+            border: 1px solid var(--index);
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        @media screen and (max-width: 485px){
+            .search-land-title form input[type=text]{
+                width: 100% !important;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                margin-bottom: 14px;
+}
+            .search-land-title form input[type=submit]{
+                width: 100%;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+}
+        }
+
+        @media screen and (max-width: 575px){
+          
+            .search-land-title form{
+                width: 83%;
+            }
+
+            .search-land-title form input[type=text]{
+                width:60%;
+                padding: 4px 14px;
+            }
+
+            .search-land-title form input[type=submit]{
+                padding: 4px 18px;
+            }
+        }
+            
+        
+
+
+
+        /* =============================  all books search ======================================== */
+
+        #search-book{
+            margin-top: 19px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly !important;
+        }
+
+           /* .search-book .row{
+            margin-top: 19px;
+            justify-content: space-evenly;
+        } */
+
+        #search-book .card{
+            position: relative;
+            min-height: 400px !important;
+        }
+        
+        #search-book .card,
+        #search-book .card img{
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+        
+        .search-book .card .image-box{
+        overflow: hidden;
+        width: 100%;
+        
+        }
+        
+        .search-book  .card img{
+            overflow: hidden;
+        height: 239px;
+        /* width: 208px; */
+        width: 208px;
+        transition: all 0.4s ;
+        -webkit-transition: all 0.4s ;
+        -moz-transition: all 0.4s ;
+        -ms-transition: all 0.4s ;
+        -o-transition: all 0.4s ;
+        }
+        
+        .search-book  .card img:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        }
+        
+        .search-book  .card .prix{
+        padding: 10px;
+        text-align: center;
+        background-color: var(--index);
+        color: white;
+        width: 45px;
+        height: 45px;
+        line-height: 23px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-weight: 500;
+        position: absolute;
+        top: 218px;
+        left: 145px;
+        }
+        .search-book  .card .prix #dollar{
+        font-size: 10px;
+        }
+        
+        .search-book .card .card-title{
+            margin-top: 30px !important;
+        font-size: 17px;
+        }
+        
+        .search-book .card .card-title::before {
+        content: '';
+        width: 5px;
+        height: 33px;
+        background-color: var(--index);
+        position: absolute;
+        top: 265px;
+        left: 0px;
+        }
+        
+        .search-book .card .btn{
+        border-radius: 0;
+        width: 208px;
+        padding: 11px;
+        border-top: 1px solid #d2d2d2;
+        margin-top: 80px;
+        font-weight: 500;
+        position: absolute;
+        bottom: 0px;
+        }
+        
+        .search-book .card .btn:hover{
+        border: 1px solid var(--index);
+        color: var(--index);
+        }
+        .search-book .card .rating i{
+        font-size: 14px;
+        color: gold;
+        } 
+
+
+
+        /* .search-book .row{
+            margin-top: 19px;
+            justify-content: space-evenly;
+        } */
+        
+        /* .search-book .row .card,
+        .search-book .row .card img{
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+        
+        .search-book .row .card .image-box{
+        overflow: hidden;
+        width: 100%;
+        
+        }
+        
+        .search-book .row .card img{
+            overflow: hidden;
+        height: 239px;
+        width: 208px;
+        transition: all 0.4s ;
+        -webkit-transition: all 0.4s ;
+        -moz-transition: all 0.4s ;
+        -ms-transition: all 0.4s ;
+        -o-transition: all 0.4s ;
+        }
+        
+        .search-book .row .card img:hover{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        }
+        
+        .search-book .row .card .prix{
+        padding: 10px;
+        text-align: center;
+        background-color: var(--index);
+        color: white;
+        width: 45px;
+        height: 45px;
+        line-height: 23px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-weight: 500;
+        position: absolute;
+        top: 218px;
+        left: 145px;
+        }
+        .search-book .row .card .prix #dollar{
+        font-size: 10px;
+        }
+        
+        .row .card .card-title{
+        font-size: 17px;
+        }
+        
+        .row .card .card-title::before {
+        content: '';
+        width: 5px;
+        height: 33px;
+        background-color: var(--index);
+        position: absolute;
+        top: 258px;
+        left: 0px;
+        }
+        
+        .row .card .btn{
+        border-radius: 0;
+        width: 208px;
+        padding: 11px;
+        border-top: 1px solid #d2d2d2;
+        margin-top: 16px;
+        font-weight: 500;
+        }
+        
+        .row .card .btn:hover{
+        border: 1px solid var(--index);
+        color: var(--index);
+        }
+        .row .card .rating i{
+        font-size: 14px;
+        color: gold;
+        } */
+

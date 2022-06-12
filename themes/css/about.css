@@ -1,0 +1,276 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+
+.about-land{
+        width: 100%;
+        min-height: 330px;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url("../image/journy.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        margin-bottom: 70px;
+
+    }
+    .about header{
+        background-color: black;
+        align-items: center;
+        
+    }
+
+    .about-land-title{
+        width: 100%;
+    }
+    .about-land-title h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /* ==========================  start who we are =================================== */
+
+        .who{
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            margin-right: 0 !important;
+            margin-bottom: 100px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+        /* .whoweare h2 {
+            display: inline-block;
+            position: relative;
+        } */
+
+        /* .whoweare h2::before{
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 39px;
+            top: 0;
+            left: 79px;
+            background-color: var(--index);
+        } */
+
+        .whoweare h2 span{
+            color: var(--index);
+            font-weight: bold;
+            /* margin-right: 15px; */
+        }
+
+        .whoweare h3{
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .whoweare h3::before{
+            content: "";
+            width: 7px;
+            height: 37px;
+            background-color: var(--index);
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+
+
+        .who .image-box{
+            width: 40%;
+        }
+
+        .who .image-box img{
+            width: 100%;
+        }
+
+        .who .about-content{
+            width: 55%;
+        }
+
+
+        @media screen and (max-width:768px) {
+            .who{
+                flex-direction: column;    
+            }
+
+            .who .image-box{
+                width: 60%;
+                margin-bottom: 28px;
+            }
+    
+            
+    
+            .who .about-content{
+                width: 100%;
+            }
+
+           
+        }
+        @media screen and (max-width:991px) {
+            .who .about-content p{
+                font-size: 12px;
+            }
+        }
+
+    /* ==========================  end who we are   =================================== */
+
+
+
+
+
+
+    /*==============================  start inour stoore =============================*/
+
+                .inourstore {
+                 width: 100%;   
+                }
+
+                .inourstore h2 span{
+                        color: var(--index);
+                }
+        
+            .inourstore .inour {
+                width: 100%;
+                /* padding: 40px; */
+                display: flex;
+                justify-content: space-around;
+            }           
+
+            .inourstore .inour .box{
+                padding: 34px;
+                width: 45%;
+                background-color: white;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+}
+            .inourstore .inour .box:hover{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            @media screen and (max-width:777px){
+                .inourstore .inour {
+                    width: 100%;
+                    /* padding: 40px; */
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                .inourstore .inour .box{
+                    padding: 34px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background-color: white;
+                }
+            }
+
+            .inourstore .inour .box .title-count{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 19px;
+            }
+
+            .inourstore .inour .box p{
+                text-align: justify;
+            }
+
+            .inourstore .inour .box .title-count h3{
+                /* margin-left: 20px; */
+                position: relative;
+
+            }
+            
+            .inourstore .inour .box .title-count h3::before{
+                content: '';
+                width: 7px;
+                height: 37px;
+                position: absolute;
+                top: 0;
+                left: -20px;
+            }
+
+            .inourstore .inour .box a{
+                padding: 7px 30px;
+                border-radius: 19px;
+                -webkit-border-radius: 19px;
+                -moz-border-radius: 19px;
+                -ms-border-radius: 19px;
+                -o-border-radius: 19px;
+                color: white;
+                font-weight: 500;
+          }
+
+            .inourstore .inour .box1 .title-count h1{
+                color: rgb(254,65,87);
+            }
+            .inourstore .inour .box1 a{
+                background-color: rgb(254,65,87);
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+}
+            .inourstore .inour .box1 a:hover{
+                background-color: white;
+                border: 1px solid rgb(254,65,87);
+                color:rgb(254,65,87);
+            }
+            .inourstore .inour .box2 .title-count h1{
+                color: rgb(170,113,208);
+            }
+            .inourstore .inour .box2 a{
+                background-color: rgb(170,113,208);
+                transition: all 0.2s;
+                -webkit-transition: all 0.2s;
+                -moz-transition: all 0.2s;
+                -ms-transition: all 0.2s;
+                -o-transition: all 0.2s;
+            }
+
+            .inourstore .inour .box2 a:hover{
+                background-color: white;
+                border: 1px solid rgb(170,113,208);
+                color:rgb(170,113,208);
+            }
+
+            .inourstore .inour .box1 .title-count h3::before{
+                background-color: rgb(254,65,87);
+            }
+
+
+            .inourstore .inour .box2 .title-count h3::before{
+                background-color: rgb(170,113,208);
+            }
+
+            .inourstore .inour .box p{
+                margin-bottom: 35px;
+            }
+
+
+    /*==============================  end in our store =============================*/
+
+
+
+ 
+

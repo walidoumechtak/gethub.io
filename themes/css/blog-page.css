@@ -1,0 +1,45 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+.blog-container{
+    width: 740px;
+    margin: 30px auto;
+}
+
+/* .blog-container .blogContent{
+    text-align: center;
+} */
+
+.blog-container .blogContent p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.4px;
+} 
+
+.blog-container .blogContent img{
+            /* display: block !important; */
+            /* text-align: center !important; */
+            width: 100%;
+}
+
+
+@media screen and (max-width: 323px){
+    .blog-container .blogContent p{
+        text-align: left !important;
+    } 
+}
+
+@media screen and (max-width: 575px){
+    .blog-container{
+        width: 100%;
+    }
+
+    .blog-container .blogContent{
+        padding: 3px 10px;
+    } 
+    .blog-container .blogContent p{
+        text-align: justify;
+    } 
+}
+    

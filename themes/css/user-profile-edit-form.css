@@ -1,0 +1,79 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+
+body{
+    background-color: white;
+}
+
+
+div.card-header{
+    background-color: var(--index);
+    color: white;
+    font-weight: 500;
+}
+
+.nav-borders a{
+    color: var(--index);
+    font-weight: 500 !important;
+}
+
+.nav-borders a:hover{
+    color: var(--index);
+}
+
+
+.addbook-success{
+    width: 50.5%;
+    padding: 16px 23px;
+    background-color: #4BB543;
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 49.8%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 13px;
+}
+.users-errors{
+    width: 48%;
+    padding: 10px 15px;
+    background-color: rgb(243, 84, 84);
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 13px;
+}
+
+#registreB:not(:disabled),  #registreB:not(:disabled), #registreB:not(:disabled) {
+cursor: pointer !important;
+background-color: transparent;
+border: none;
+position: absolute;
+top: -3px;
+right: 2px;
+font-weight: bold;
+font-size: 24px;
+color: white;
+}
+
+
+.bbttnn{
+    background-color: var(--index);
+    color: white;
+    border: none;
+    padding: 7px 37px;
+    font-weight: 600;
+}

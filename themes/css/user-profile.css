@@ -1,0 +1,57 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+
+
+.user-profile span b{
+    color: var(--index);
+}
+
+
+.user-profile .edite{
+    background-color: var(--index) !important;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 5px 24px;
+    border: 1px solid var(--index);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.user-profile .edite:hover{
+    background-color: white !important;
+    color: var(--index);
+    border: 1px solid var(--index);
+}
+
+.user-profile .delete{
+    background-color: rgb(237, 110, 110) !important;
+    margin-top: 15px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border: 1px solid rgb(237, 110, 110);
+    padding: 5px 24px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.user-profile .delete:hover{
+    background-color: white !important;
+    color: rgb(237, 110, 110);
+    border: 1px solid rgb(237, 110, 110);
+}
+
+
+.user-profile .image-button{
+    background-color: transparent;
+    border: 1px solid var(--index);
+}

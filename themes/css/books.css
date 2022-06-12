@@ -1,0 +1,258 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+
+.books-land{
+        width: 100%;
+        min-height: 330px;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url("../image/journy.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-attachment: fixed;
+        margin-bottom: 70px;
+
+    }
+    .booksnav header{
+        background-color: black;
+        align-items: center;
+        
+    }
+
+    .books-land-title{
+        width: 100%;
+    }
+    .books-land-title h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    /* .container .nav-left {
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        background-color: orange;
+    }
+
+    .container .nav-left a{
+            color: black;
+    } */
+
+
+    .booksPage{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+
+    /* The side  menu */
+.booksPage .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--index);
+    /* position: fixed; */
+    /* height: 100%; */
+    overflow: auto;
+  }
+  
+  /* Sidebar herfatt */
+  .booksPage .sidebar a {
+    font-weight: 600;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+}
+
+.booksPage .sidebar span{
+    font-weight: 600;
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 16px 16px 16px 26px;
+    position: relative;
+}
+
+.booksPage .sidebar span::before{
+    content: "";
+    width: 6px;
+    height: 56px;
+    background-color: rgb(245, 55, 55);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+  /* Active/current linkaaat */
+  /* .booksPage .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  } */
+  
+  /* Links on mouse-over */
+  .booksPage .sidebar a:hover{
+    background-color: black;
+    /* color: white; */
+  }
+  /* .booksPage .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  } */
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  .booksPage .content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    margin-left: 10px;
+    padding: 1px 16px;
+    /* height: 1000px; */
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 991px) {
+    .booksPage .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    /* .booksPage .sidebar a {float: left;} */
+    div.content {margin-left: 0;
+    /* margin-top: 19px; */
+    }
+
+    .booksPage .sidebar {
+        background-color: var(--index);
+      }
+
+  }
+
+  @media screen and (max-width: 767px){
+          .booksPage .sidebar a {
+              float: left;
+            }
+
+          div.content {
+            margin-left: 0 !important;
+            padding-left:0 !important;
+            padding-right:0 !important;
+            margin-top: 19px;
+            }
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 475px) {
+    .booksPage .content {
+        flex-direction: column;
+        align-items: center;
+     }
+  }
+  @media screen and (max-width: 400px) {
+    .booksPage .sidebar a {
+      text-align: center;
+      float: none;
+    }
+
+    .booksPage .sidebar {
+        background-color: var(--index);
+      }
+
+      
+  }
+
+
+  /*==============================  start page books =============================*/
+
+
+
+        .content .card,
+        .content .card img{
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
+        .content .card img{
+        height: 239px;
+        width: 208px;
+
+        }
+
+        .content .card .prix{
+        padding: 10px;
+        text-align: center;
+        background-color: var(--index);
+        color: white;
+        width: 45px;
+        height: 45px;
+        line-height: 23px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-weight: 500;
+        position: absolute;
+        top: 218px;
+        left: 145px;
+        }
+
+        .content .card .prix #dollar{
+        font-size: 10px;
+        }
+
+        .content .card .card-title{
+        font-size: 17px;
+        }
+
+        .content .card .card-title::before {
+        content: '';
+        width: 5px;
+        height: 33px;
+        background-color: var(--index);
+        position: absolute;
+        top: 258px;
+        left: 0px;
+        }
+
+        .content .card .btn{
+        border-radius: 0;
+        width: 208px;
+        padding: 11px;
+        border-top: 1px solid #d2d2d2;
+        margin-top: 16px;
+        font-weight: 500;
+        }
+
+        .content .card .btn:hover{
+        border: 1px solid var(--index);
+        color: var(--index);
+        }
+        .content .card .rating i{
+        font-size: 14px;
+        color: gold;
+        }
+/*==============================  end page books =============================*/
+
+
+
+
+
+
+

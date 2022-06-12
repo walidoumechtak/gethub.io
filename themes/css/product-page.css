@@ -1,0 +1,251 @@
+:root{
+    --index : rgb(247, 183, 64);
+}
+
+body{
+    background-color:#F8F8F8;
+}
+
+
+.conatiner2{
+    width:900px;
+    margin:0px auto;
+}
+
+
+.product{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    background-color: white !important;
+    margin-top: 60px !important;
+    padding: 5px;
+}
+
+
+.product .image-box{
+    width: 40%;
+}
+
+.product .image-box img{
+    width: 90%;
+    align-self: center;
+}
+
+.product .content{
+    width: 60%;
+    padding: 30px;
+}
+
+.product .content .title-share{
+    display: flex;
+    justify-content: space-between !important;  
+    align-items: center;
+    margin-bottom: 23px;
+}
+.product .content .title-share i{
+    font-size: 23px;
+}
+
+.product .content .description p{
+    margin-bottom: 23px !important;
+}
+
+.product .content .price h2{
+    margin-bottom: 23px;
+}
+
+.product .content .price h2{
+    color: var(--index);
+}
+
+.product .content .price h2 s{
+    color: black;
+}
+
+.product .available{
+    border-top: 1px solid var(--index);
+    border-bottom: 1px solid var(--index);
+    margin-bottom: 30px;
+    padding: 9px 0 !important;
+    
+}
+
+.product .available p b{
+   margin: 0 15px;
+}
+
+.product .available p span{
+    font-weight: 700;
+
+}
+
+.product .available p{
+    margin: 0;
+}
+
+
+
+.product .add-to-cart a{
+    background-color: black;
+    color: white;
+    padding: 8px 29px;
+    border-radius: 20px;
+
+}
+
+
+/*========================================  related books ==================================*/
+
+.container3{
+    width:900px;
+    margin:0px auto;
+}
+
+
+
+.rel-books .row{
+    margin-top: 19px;
+    justify-content: space-evenly;
+}
+
+.rel-books .row .card,
+.rel-books .row .card img{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.rel-books .row .card .image-box{
+overflow: hidden;
+width: 100%;
+
+}
+
+.rel-books .row .card img{
+    overflow: hidden;
+height: 239px;
+width: 208px;
+transition: all 0.4s ;
+-webkit-transition: all 0.4s ;
+-moz-transition: all 0.4s ;
+-ms-transition: all 0.4s ;
+-o-transition: all 0.4s ;
+}
+
+.rel-books .row .card img:hover{
+transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+}
+
+.rel-books .row .card .prix{
+padding: 10px;
+text-align: center;
+background-color: var(--index);
+color: white;
+width: 45px;
+height: 45px;
+line-height: 23px;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+font-weight: 500;
+position: absolute;
+top: 218px;
+left: 145px;
+}
+.rel-books .row .card .prix #dollar{
+font-size: 10px;
+}
+
+.row .card .card-title{
+font-size: 17px;
+}
+
+.row .card .card-title::before {
+content: '';
+width: 5px;
+height: 33px;
+background-color: var(--index);
+position: absolute;
+top: 258px;
+left: 0px;
+}
+
+.row .card .btn{
+border-radius: 0;
+width: 208px;
+padding: 11px;
+border-top: 1px solid #d2d2d2;
+margin-top: 16px;
+font-weight: 500;
+}
+
+.row .card .btn:hover{
+border: 1px solid var(--index);
+color: var(--index);
+}
+.row .card .rating i{
+font-size: 14px;
+color: gold;
+}
+
+
+@media screen and (max-width: 428px){
+    .product .available p{
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .product{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .product .content{
+        width: 100% !important;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 991px) {
+        .conatiner2,
+        .container3{
+            width:100% !important;
+        }
+
+
+        .product .image-box{
+            width: 50%;
+        }
+        
+        .product .image-box img{
+            width: 100%;
+            align-self: center;
+        }
+        
+        .product .content{
+            width: 55%;
+        }
+
+        .product .description p{
+            font-size: 13px;
+        }
+
+}
+/*==============================  end releated =============================*/
+
+
+
