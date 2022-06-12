@@ -1,2 +1,0 @@
-# gethub.io
-My portfolio
